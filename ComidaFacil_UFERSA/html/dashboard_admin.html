@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - ComidaFácil UFERSA</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ComidaFácil UFERSA - Painel Administrativo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Gerenciar Cardápio</a></li>
+                <li><a href="#">Pedidos em Andamento</a></li>
+                <li><a href="#">Estatísticas</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <h2>Bem-vindo(a), Administrador(a)!</h2>
+
+        <section class="menu-management">
+            <h3>Gerenciar Cardápio</h3>
+            <button class="btn">Adicionar Novo Item</button>
+            <div id="admin-menu-items" class="menu-grid">
+                <!-- Itens do cardápio para administração serão carregados aqui via JS -->
+            </div>
+        </section>
+
+        <section class="order-management">
+            <h3>Pedidos em Andamento</h3>
+            <div id="current-orders">
+                <!-- Pedidos em andamento serão carregados aqui via JS -->
+            </div>
+        </section>
+
+        <section class="sales-statistics">
+            <h3>Estatísticas de Vendas</h3>
+            <p>Gráficos e dados de vendas serão exibidos aqui.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ComidaFácil UFERSA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+

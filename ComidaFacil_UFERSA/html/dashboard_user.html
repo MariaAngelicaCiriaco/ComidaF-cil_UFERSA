@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Usuário - ComidaFácil UFERSA</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ComidaFácil UFERSA</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Meus Pedidos</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <h2>Bem-vindo(a), Usuário!</h2>
+        <section class="menu-selection">
+            <h3>Cardápio do Dia</h3>
+            <div class="restaurant-filter">
+                <label for="restaurant-select">Filtrar por Restaurante:</label>
+                <select id="restaurant-select">
+                    <option value="all">Todos</option>
+                    <option value="ru_central">Restaurante Universitário Central</option>
+                    <option value="cantina_ccsa">Cantina CCSA</option>
+                </select>
+            </div>
+            <div id="menu-items" class="menu-grid">
+                <!-- Itens do cardápio serão carregados aqui via JS -->
+            </div>
+        </section>
+
+        <section class="current-order">
+            <h3>Meu Pedido Atual</h3>
+            <ul id="order-list">
+                <!-- Itens do pedido serão adicionados aqui via JS -->
+            </ul>
+            <textarea id="order-observations" placeholder="Observações (ex: sem cebola, bebida gelada)"></textarea>
+            <button class="btn" id="place-order-btn">Fazer Pedido</button>
+        </section>
+
+        <section class="order-status">
+            <h3>Status do Último Pedido: <span id="status-text">Nenhum pedido</span></h3>
+            <p>Acompanhe o preparo do seu pedido em tempo real.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ComidaFácil UFERSA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+
